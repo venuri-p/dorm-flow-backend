@@ -8,7 +8,10 @@ import java.util.List;
 public class Room {
 
     @Id
-    @Column(name = "room_number", length = 50)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "room_number", length = 50, nullable = false, unique = true)
     private String roomNumber;
 
     @Column(name = "block_name", length = 100, nullable = false)
