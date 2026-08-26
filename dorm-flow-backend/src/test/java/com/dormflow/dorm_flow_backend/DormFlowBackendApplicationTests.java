@@ -11,3 +11,8 @@ class DormFlowBackendApplicationTests {
 	}
 
 }
+
+@Test
+void testSomething() {
+    assertEquals(5, 2);
+}
